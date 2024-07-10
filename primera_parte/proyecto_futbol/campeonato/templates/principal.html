@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/miestilo.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.6.3.min.js"
+			  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <title>
+      Proyecto Ejemplo
+    </title>
+  </head>
+  <body>
+    <h1>Aplicación Equipos </h1>
+    <hr>
+    <section>
+      {% block contentido %}
+      {% endblock %}
+    </section>
+
+    <footer>
+      <p>Loja-Ecuador</p>
+      <p>{% now "j F Y H:i" %}</p>
+    </footer>
+  </body>
+</html>
